@@ -16,11 +16,11 @@ Sign up for a free account and fill out your details.
 
 Then click on "open web apps".
 
-[Click on open web apps](images/python-web-app.png)
+[Click on open web apps](../../images/python-web-app.png)
 
 Then click on "add a new web app".
 
-[New web app](images/python-new-web-app.png)
+[New web app](../images/python-new-web-app.png)
 
 You'll see a page that lets you configure your app:
 
@@ -28,19 +28,19 @@ This page allows you to configure the Web framework you want to use. There are m
 
 For simplicity, I'll go with Flask.
 
-[Python Web framework](images/python-web-framework.png)
+[Python Web framework](../images/python-web-framework.png)
 
 Then it lets you select your Python version. Go for the newest version.
 
-[Python version](images/python-version.png)
+[Python version](../images/python-version.png)
 
 Finally enter a Path for your Python file and click next. That sets up your Python web app and it is now hosted and online!
 
-[Flask web app](images/flask-web-app.png)
+[Flask web app](../images/flask-web-app.png)
 
 You can then open the source for of your web app. Either through the bash console or the web interface. They provide an online editor.
 
-[Python flask](images/python-flask.png)
+[Python flask](../images/python-flask.png)
 
 
 ### Flask web app
