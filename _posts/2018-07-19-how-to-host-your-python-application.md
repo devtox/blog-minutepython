@@ -136,11 +136,11 @@ if __name__ == '__main__':
 
 The web browser will always send GET requests when you call an url and return data
 
-![python flask form](images/flask-form.png)
+![python flask form](../images/flask-form.png)
 
 But when you submit a form, it doesn't send a GET request but a POST request instead.
 
-![python flask post form](images/flask-form-post.png)
+![python flask post form](../images/flask-form-post.png)
 
 
 
