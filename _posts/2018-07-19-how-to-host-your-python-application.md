@@ -58,19 +58,19 @@ app = Flask(__name__)
 def hello_world():
     return 'Hello from Flask!'
 ```
-
+<br />
 The first line of code simply loads the Flask module.
 
 ```python
 from flask import Flask
 ```
-
+<br />
 Then the app is created
 
 ```python
 app = Flask(__name__)
 ```
-
+<br />
 Then a route is created. A route is mapping of a link to a Python function. In the case the / link is called, Python will execute the function hello_world(). The return value is shown in the browser.
 
 ```python
@@ -78,7 +78,7 @@ Then a route is created. A route is mapping of a link to a Python function. In t
 def hello_world():
     return 'Hello from Flask!'
 ```
-
+<br />
 You can change this value to anything you want. If you return html tags, the browser will simply render html.
 
 You can add as many routes as you want. Every web url has the map to a unique Python function, for example try this:
@@ -96,7 +96,7 @@ def html():
 def image():
     return "<img src='https://wallup.net/wp-content/uploads/2019/10/355155-cat-meme-quote-funny-humor-grumpy-computer.jpg">'
 `````
-
+<br />
 Of course there's a lot more you can do with the Python Flask framework, these are just the absolute basics.
 
 ## Flask routing
@@ -110,7 +110,7 @@ In Flask, routes are defined in the app object. Each route is associated with a 
 def a_function():
     return 'Data shown in web browser!'
 ```
-
+<br />
 The first argument to the route decorator is the path of the URL. This can be a static string, or it can contain variable parts enclosed in angle brackets (<>). Variable parts are converted to positional arguments in the handler function.
 
 The second argument optional, and if provided it must be one of the HTTP calls 'GET', 'POST', 'PUT', 'DELETE', 'PATCH' or 'OPTIONS'.
@@ -118,7 +118,7 @@ The second argument optional, and if provided it must be one of the HTTP calls '
 ```python
 @appFlask.route('/my-form', methods=['GET', 'POST'])
 ```
-
+<br />
 The example below creates a web form that supports both HTTP GET and HTTP POST request. When loading the page it uses a GET request, when you fill in the form it sends a HTTP POST request.
 
 ```python
@@ -139,7 +139,7 @@ def my_form():
 if __name__ == '__main__':
     appFlask.run(debug = True)
 ```
-
+<br />
 The web browser will always send GET requests when you call an url and return data
 
 ![python flask form](../images/flask-form.png)
@@ -155,6 +155,8 @@ But when you submit a form, it doesn't send a GET request but a POST request ins
 You can click on "Open Bash console here". This lets you run [Linux Bash commands](https://bsdnerds.org/what-is-linux-shell/). Bash is the default shell on various Linux distributions and macOS. 
 
 Bash is a command processor that typically runs in a text window, where the user types commands that cause actions. 
+
+![bash console](../images/bash.png)
 
 Bash can also read commands from a file, called a bash script. The name originally stood for Bourne-again shell, a pun on Stephen Bourne, the author of the direct ancestor of the current Unix shell.
 
