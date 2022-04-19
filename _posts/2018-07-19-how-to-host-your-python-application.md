@@ -99,3 +99,60 @@ def image():
 
 Of course there's a lot more you can do with the Python Flask framework, these are just the absolute basics.
 
+## Flask routing
+
+A url route is a mapping between an HTTP verb and an endpoint. The endpoint can be a resource, such as a file or script, or it can be a function that processes the request.
+
+In Flask, routes are defined in the app object. Each route is associated with a handler, which is a Python function that takes an incoming request and produces an outgoing response.
+
+The first argument to the route decorator is the path of the URL. This can be a static string, or it can contain variable parts enclosed in angle brackets (<>). Variable parts are converted to positional arguments in the handler function.
+
+The second argument optional, and if provided it must be one of the HTTP calls 'GET', 'POST', 'PUT', 'DELETE', 'PATCH' or 'OPTIONS'.
+
+```python
+@appFlask.route('/my-form', methods=['GET', 'POST'])
+```
+
+The example below creates a web form that supports both HTTP GET and HTTP POST request. When loading the page it uses a GET request, when you fill in the form it sends a HTTP POST request.
+
+```python
+from flask import Flask, request
+appFlask = Flask(__name__)
+
+@appFlask.route('/my-form', methods=['GET', 'POST'])
+def my_form():
+    # handle the POST request
+    if request.method == 'POST':
+        name = request.form.get('name')
+        job = request.form.get('Job')
+        return '<h1>The Employee Name is: {}</h1><h1>The Job is: {}</h1>'''.format(name, job)
+    else:
+        # handle the GET request
+        return '<form method="POST"><div><label>Employee Name: <input type="text" name="name"></label></div><div><label>Job: <input type="text" name="Job"></label></div><input type="submit" value="Submit"></form>'
+
+if __name__ == '__main__':
+    appFlask.run(debug = True)
+```
+
+The web browser will always send GET requests when you call an url and return data
+
+![python flask form](images/flask-form.png)
+
+But when you submit a form, it doesn't send a GET request but a POST request instead.
+
+![python flask post form](images/flask-form-post.png)
+
+
+
+## Bash terminal
+
+You can click on "Open Bash console here". This lets you run [Linux Bash commands](https://bsdnerds.org/what-is-linux-shell/). Bash is the default shell on various Linux distributions and macOS. 
+
+Bash is a command processor that typically runs in a text window, where the user types commands that cause actions. 
+
+Bash can also read commands from a file, called a bash script. The name originally stood for Bourne-again shell, a pun on Stephen Bourne, the author of the direct ancestor of the current Unix shell.
+
+If you want to, you can use a Linux editor like vim directly from the console window.
+
+If you want to use SSH access and push directly from your git repository, you'll need a paid account. There's a [guide](https://blog.pythonanywhere.com/87/) on that.
+
