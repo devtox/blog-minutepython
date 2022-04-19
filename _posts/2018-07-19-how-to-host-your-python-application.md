@@ -105,6 +105,12 @@ A url route is a mapping between an HTTP verb and an endpoint. The endpoint can 
 
 In Flask, routes are defined in the app object. Each route is associated with a handler, which is a Python function that takes an incoming request and produces an outgoing response.
 
+```python
+@app.route('/url')
+def a_function():
+    return 'Data shown in web browser!'
+```
+
 The first argument to the route decorator is the path of the URL. This can be a static string, or it can contain variable parts enclosed in angle brackets (<>). Variable parts are converted to positional arguments in the handler function.
 
 The second argument optional, and if provided it must be one of the HTTP calls 'GET', 'POST', 'PUT', 'DELETE', 'PATCH' or 'OPTIONS'.
