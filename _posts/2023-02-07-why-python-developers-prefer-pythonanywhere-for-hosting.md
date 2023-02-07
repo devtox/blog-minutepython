@@ -20,7 +20,7 @@ One of the biggest advantages of PythonAnywhere is its affordable pricing. It of
 
 PythonAnywhere is built specifically for Python developers, which means that it is optimized for hosting Python applications. It provides a range of tools and resources specifically designed for Python developers, including a Python-focused web development environment, a range of Python libraries, and a variety of database options.
 
-![Web servers](../../images/web-servers.jpeg)
+![Web servers](../../images/web-servers.jpg)
 
 ## Reliable and Secure
 
